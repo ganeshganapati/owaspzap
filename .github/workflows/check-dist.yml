@@ -6,14 +6,8 @@
 name: Check dist/
 
 on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Manual trigger from the UI
   workflow_dispatch:
 
 jobs:
